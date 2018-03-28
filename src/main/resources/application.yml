@@ -1,0 +1,12 @@
+logging:
+    level:
+        org.vld.template: DEBUG
+
+liquibase:
+    datasource:
+        url: jdbc:sqlserver://localhost:1433;databaseName=people
+        username: family
+        password: Password!1
+        driver: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    changeLog: classpath:liquibase/changelog-master.xml
+    defaultSchema: liquibase
